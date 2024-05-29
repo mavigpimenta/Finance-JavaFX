@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.SpendingSceneController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="301.0" style="-fx-background-color: #054F77;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-receive-cash-100.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="385.0" layoutY="78.0" text="Registre sua Saída!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="135.0" text="Motivo" />
+      <TextField id="tfSpendingReason" fx:id="tfSpendingReason" layoutX="394.0" layoutY="152.0" />
+      <Label layoutX="394.0" layoutY="184.0" text="Valor" />
+      <TextField id="tfSpendingValue" fx:id="tfSpendingValue" layoutX="394.0" layoutY="201.0" />
+      <Label layoutX="394.0" layoutY="234.0" text="Data da Saída" />
+      <DatePicker id="tfSpendingDate" fx:id="tfSpendingDate" layoutX="394.0" layoutY="251.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button id="btSpendingRegister" fx:id="btSpendingRegister" layoutX="394.0" layoutY="290.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #054F77;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
